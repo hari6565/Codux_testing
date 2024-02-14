@@ -1,9 +1,12 @@
 import React from "react";
 import { CheckUser } from "../lib/CheckUser";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const LoginForm = ({ state = {}, setState }) => {
-  // const route = useNavigate();
+const LoginForm = ({
+  state = { username: "", password: "" },
+  setState,
+}: any) => {
+  const route = useNavigate();
   const handleChange = (e: any) => {
     setState({ ...state, [e.target.name]: e.target.value });
   };
