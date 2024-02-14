@@ -3,9 +3,12 @@ import { useState } from "react";
 import React from "react";
 import LoginForm from "./component/LoginForm.tsx";
 import About from "./component/About.tsx";
-
+interface User {
+  username: string;
+  password: string;
+}
 export default function App() {
-  const [state, setState] = useState({
+  const [state, setState] = useState<User>({
     username: "",
     password: "",
   });
