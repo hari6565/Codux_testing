@@ -3,7 +3,7 @@
   "boardGlobalSetup": "./src/_codux/boards-global-setup.ts",
   "componentsDiscovery": {
     "include": ["src/**"],
-    "exclude": ["src/_codux/component-templates/**"]
+    "exclude": ["src/_codux/component-templates/**", "src/App.tsx"]
   },
   "addPanel": {
     "assets": ["@codux-boards/react-blueprint"]

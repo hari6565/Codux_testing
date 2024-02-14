@@ -1,7 +1,6 @@
 import React from "react";
 
-
-function About({ state }) {
+function About({ state = { username: "" } }) {
   return (
     <div className="flex flex-col justify-center items-center h-screen">
       <div className="shadow-lg w-[20%] h-[20%] bg-slate-100 flex justify-center items-center text-lg">
